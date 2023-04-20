@@ -7142,6 +7142,12 @@ INSERT INTO `mob_pools` VALUES (7070,'Mystic_Avatar','Mystic_Avatar',323,0x00001
 
 -- Caedarva Mire
 INSERT INTO `mob_pools` VALUES (8000,'Vidhuwa_the_Wrathborn','Vidhuwa_the_Wrathborn',233,_binary 0x0000ef0600000000000000000000000000000000,4,4,5,240,100,0,1,3,1,2,0,0,404,133,0,1,0,0,0,233,233);
+
+-- Pulling the Plug ENM
+INSERT INTO `mob_pools` VALUES (8001,'Memory_Receptacle_red','Memory_Receptacle',181,0x00005104,1,1,7,240,100,0,1,1,0,16,0,0,6,131,0,0,0,0,0,181,181);
+INSERT INTO `mob_pools` VALUES (8002,'Memory_Receptacle_blue','Memory_Receptacle',601,0x00005004,1,1,7,240,100,0,0,0,0,16,0,0,6,131,0,0,0,0,0,181,181);
+INSERT INTO `mob_pools` VALUES (8003,'Memory_Receptacle_green','Memory_Receptacle',601,0x00004F04,1,1,7,240,100,0,0,0,0,16,0,0,6,131,0,0,0,0,0,181,181);
+INSERT INTO `mob_pools` VALUES (8004,'Memory_Receptacle_teal','Memory_Receptacle',601,0x00004E04,1,1,7,240,100,0,0,0,0,16,0,0,6,131,0,0,0,0,0,181,181);
 -- ------------------------------------------------------------
 -- Start of Ambuscade section
 -- NOTE: The mobs are changed every update in the DATs, so using out-of-date

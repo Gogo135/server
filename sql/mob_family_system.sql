@@ -232,7 +232,7 @@ INSERT INTO `mob_family_system` VALUES (177,'Mamool_Ja-Knight',98,'Mamool_Ja',7,
 INSERT INTO `mob_family_system` VALUES (178,'Mandragora',99,'Mandragora',17,'Plantoid',0,40,107,120,5,3,4,4,4,4,4,1,3,1,2,4,2,1);
 INSERT INTO `mob_family_system` VALUES (179,'Manticore',100,'Manticore',6,'Beast',1,50,140,130,2,5,2,5,4,4,5,1,3,1,3,3,257,0);
 INSERT INTO `mob_family_system` VALUES (180,'Marid',101,'Marid',6,'Beast',2,40,150,90,3,5,1,6,3,3,4,1,3,1,3,4,257,0);
-INSERT INTO `mob_family_system` VALUES (181,'MemoryReceptacle',0,'undefined',12,'Empty',2,0,200,0,1,3,5,4,2,2,5,1,3,1,3,0,256,0);
+INSERT INTO `mob_family_system` VALUES (181,'MemoryReceptacle',0,'undefined',12,'Empty',2,0,200,0,1,3,5,4,2,2,5,1,3,1,3,0,2,0);
 INSERT INTO `mob_family_system` VALUES (182,'Merrow',94,'Lamiae-Merrow',7,'Beastmen',0,40,100,120,3,3,2,4,3,3,2,1,3,1,3,6,1,0);
 INSERT INTO `mob_family_system` VALUES (183,'Mimic',102,'Mimic',3,'Arcana',0,0,90,90,1,3,2,2,6,6,5,1,3,1,3,7,34,0);
 INSERT INTO `mob_family_system` VALUES (184,'Moblin',77,'Goblin',7,'Beastmen',0,40,92,140,1,1,4,3,1,1,3,1,3,1,3,5,1,0);
@@ -532,6 +532,7 @@ INSERT INTO `mob_family_system` VALUES (505,'Fungi',0,'undefined',0,'Unclassifie
 INSERT INTO `mob_family_system` VALUES (506,'Meeble',189,'Meeble',7,'Beastmen',0,40,125,90,3,2,5,2,6,4,5,1,2,1,3,5,1,0);
 INSERT INTO `mob_family_system` VALUES (507,'Quasilumin',15,'Luminian',0,'Unclassified',1,25,100,100,5,5,5,5,5,5,5,5,5,5,5,0,2,0);
 INSERT INTO `mob_family_system` VALUES (600,'Sidhe',600,'Sidhe',18,'Fairy',0,40,90,100,4,6,4,5,5,1,3,3,3,3,3,3,5,0);
+INSERT INTO `mob_family_system` VALUES (601,'MemoryReceptacleENM',0,'undefined',12,'Empty',2,40,200,0,1,3,5,4,2,2,5,1,3,1,3,0,256,0);
 
 INSERT INTO `mob_family_system` VALUES (411,'Pet-Siren',16,'Siren',5,'Avatar',0.00,40,100,120,3,3,3,3,3,3,3,1,3,1,3,0,41,0);
 
