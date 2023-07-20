@@ -34,6 +34,25 @@ xi.nyzul.baseWeapons =
     [xi.job.SCH] = xi.items.ELDER_STAFF,
 }
 
+xi.nyzul.armor =
+{
+    [1] = xi.items.DENALI_GAMASHES,
+    [2] = xi.items.ASKAR_GAMBIERAS,
+    [3] = xi.items.GOLIARD_CLOGS,
+    [4] = xi.items.DENALI_KECKS,
+    [5] = xi.items.ASKAR_DIRS,
+    [6] = xi.items.GOLIARD_TREWS,
+    [7] = xi.items.DENALI_WRISTBANDS,
+    [8] = xi.items.ASKAR_MANOPOLAS,
+    [9] = xi.items.GOLIARD_CUFFS,
+    [10] = xi.items.DENALI_JACKET,
+    [11] = xi.items.ASKAR_KORAZIN,
+    [12] = xi.items.GOLIARD_SAIO,
+    [13] = xi.items.DENALI_BONNET,
+    [14] = xi.items.ASKAR_ZUCCHETTO,
+    [15] = xi.items.GOLIARD_CHAPEAU,   
+}
+
 xi.nyzul.objective =
 {
     ELIMINATE_ENEMY_LEADER      = 1,
@@ -882,6 +901,21 @@ xi.nyzul.vigilWeaponDrop = function(player, mob)
     -- Every NM can randomly drop a vigil weapon
     elseif math.random(1, 100) <= 20 and xi.settings.main.ENABLE_VIGIL_DROPS then
         player:addTreasure(xi.nyzul.baseWeapons[math.random(1, #xi.nyzul.baseWeapons)], mob)
+    end
+end
+
+xi.nyzul.armorDrop = function(player,mob)
+    local instance = mob:getInstance()
+    if instance:getLocalVar("Nyzul_Current_Floor") == 20 and math.random(1, 100) <= 15 then
+        player:addTreasure(xi.nyzul.armor[math.random(1, 3)], mob)
+    elseif instance:getLocalVar("Nyzul_Current_Floor") == 40 and math.random(1, 100) <= 15 then
+        player:addTreasure(xi.nyzul.armor[math.random(4, 5)], mob)
+    elseif instance:getLocalVar("Nyzul_Current_Floor") == 60 and math.random(1, 100) <= 15 then
+        player:addTreasure(xi.nyzul.armor[math.random(6, 9)], mob)
+    elseif instance:getLocalVar("Nyzul_Current_Floor") == 80 and math.random(1, 100) <= 15 then
+        player:addTreasure(xi.nyzul.armor[math.random(10, 12)], mob)
+    elseif instance:getLocalVar("Nyzul_Current_Floor") == 100 and math.random(1, 100) <= 15 then
+        player:addTreasure(xi.nyzul.armor[math.random(13, 15)], mob)
     end
 end
 
