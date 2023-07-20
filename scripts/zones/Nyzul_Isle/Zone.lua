@@ -44,8 +44,12 @@ zoneObject.onEventUpdate = function(player, csid, option)
 end
 
 zoneObject.onEventFinish = function(player, csid, option)
-    if csid == 1 then
-        player:setPos(0, 0, 0, 0, xi.zone.ALZADAAL_UNDERSEA_RUINS)
+     if csid == 1 then
+        local instance = player:getInstance()
+        local chars = instance:getChars()
+        for _, entity in pairs(chars) do
+            entity:setPos(0, 0, 0, 0, xi.zone.ALZADAAL_UNDERSEA_RUINS)
+        end
     end
 end
 
